@@ -11,7 +11,9 @@
     "deploy": "graph deploy ianlapham/arbitrum-one-blocks --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug",
     "deploy-dev": "graph deploy sommelier/uniswap-v3 --ipfs http://35.197.14.14:5000/ --node http://35.197.14.14:8020/ --debug",
     "deploy-staging": "graph deploy $THE_GRAPH_GITHUB_USER/$THE_GRAPH_SUBGRAPH_NAME /Uniswap --ipfs https://api.staging.thegraph.com/ipfs/ --node https://api.staging.thegraph.com/deploy/",
-    "watch-local": "graph deploy ianlapham/uniswap-v3 --watch --debug --node http://127.0.0.1:8020/ --ipfs http://localhost:5001"
+    "watch-local": "graph deploy ianlapham/uniswap-v3 --watch --debug --node http://127.0.0.1:8020/ --ipfs http://localhost:5001",
+    "humanity-create": "graph create humanity-mainnet/blocks --node http://graph.swap.humanity.org:8020",
+    "humanity-deploy": "graph deploy humanity-mainnet/blocks --ipfs https://ipfs.staging.swap.humanity.org --node http://graph.swap.humanity.org:8020"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.51.1",
